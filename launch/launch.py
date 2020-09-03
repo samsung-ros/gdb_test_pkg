@@ -11,7 +11,7 @@ def generate_launch_description():
         package='gdb_test_pkg',
         executable='gdb_test_node',
         name='gdb_test_node',
-        prefix=['gdb -ex run --args'],
+        prefix=['xterm -e gdb -ex run --args'],
         output='screen')
 
     ld = LaunchDescription()
